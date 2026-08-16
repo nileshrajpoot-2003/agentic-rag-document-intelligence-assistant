@@ -1,0 +1,5 @@
+## Conversational Memory
+
+The system maintains conversation context across multiple turns,
+allowing users to ask follow-up questions without repeating
+previous context.
