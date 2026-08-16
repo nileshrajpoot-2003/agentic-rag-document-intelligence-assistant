@@ -1,0 +1,11 @@
+Document
+   ↓
+Loader
+   ↓
+Text Extraction
+   ↓
+Chunking
+   ↓
+Embeddings
+   ↓
+FAISS
