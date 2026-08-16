@@ -1,0 +1,4 @@
+## Observability
+
+LangSmith is used to trace LangGraph execution, monitor LLM calls,
+inspect workflow steps, and assist with debugging.
