@@ -1,0 +1,13 @@
+## Agentic Workflow
+
+User Query
+    ↓
+Query Processing
+    ↓
+Retriever
+    ↓
+Context Retrieval
+    ↓
+LLM Reasoning
+    ↓
+Response Generation
