@@ -1,0 +1,56 @@
+                       USER
+                         │
+                         ▼
+              ┌────────────────────┐
+              │    Streamlit UI    │
+              │      app.py        │
+              └─────────┬──────────┘
+                        │
+             ┌──────────┴──────────┐
+             │                     │
+             ▼                     ▼
+      Document Upload          User Query
+             │                     │
+             ▼                     ▼
+      Document Loader        Query Processing
+             │                     │
+             ▼                     │
+        Text Chunking              │
+             │                     │
+             ▼                     │
+         Embeddings                │
+             │                     │
+             ▼                     │
+       FAISS Vector Store ◄────────┘
+             │
+             ▼
+         Retriever
+             │
+             ▼
+     Relevant Context
+             │
+             ▼
+      ┌───────────────┐
+      │   LangGraph   │
+      │    Workflow   │
+      └───────┬───────┘
+              │
+              ▼
+             LLM
+              │
+              ▼
+       Generated Answer
+              │
+              ▼
+          User Response
+
+
+   ┌─────────────────────────────┐
+   │ Conversational Memory       │
+   │ + SQLite Persistence        │
+   └─────────────────────────────┘
+
+   ┌─────────────────────────────┐
+   │ LangSmith                   │
+   │ Tracing & Observability     │
+   └─────────────────────────────┘
